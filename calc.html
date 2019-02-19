@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style>
+  	#but
+  	{
+  		background: yellow;
+  		width: 5%;
+  		padding: 5px;
+  		border: 2px solid black;
+  		margin: 1%;
+  		font-size: 20px;
+  	}
+  	#display
+  	{
+  		margin-top: 10%;
+  		margin-bottom: 3%;
+  		border:2px solid black;
+  		text-align: center;
+  		font-size: 20px;
+
+  	}
+  	#qw
+  	{
+  		margin-bottom: 12.3%;
+  	}
+  </style>
+</head>
+<body> 
+
+
+<div class="container-fluid text-center bg-primary">
+
+<div class="row">
+	<div class="col-sm-12">
+		<div id="qw">
+<form name="Calculator">
+
+	<input id="display" value="" placeholder="00" ><br>
+	<input id="but" type="button" name="" value="1" onclick="b1()" >
+	<input id="but" type="button" name="" value="2" onclick="b2()">
+	<input id="but" type="button" name="" value="3" onclick="b3()">
+	<input id="but" type="button" name="" value="4" onclick="b4()"><br>
+	<input id="but" type="button" name="" value="5" onclick="b5()">
+	<input id="but" type="button" name="" value="6" onclick="b6()">
+	<input id="but" type="button" name="" value="7" onclick="b7()">
+	<input id="but" type="button" name="" value="8" onclick="b8()"><br>
+	<input id="but" type="button" name="" value="9" onclick="b9()">
+	<input id="but" type="button" name="" value="0" onclick="b0()">
+	<input id="but" type="button" name="" value="=" onclick="beq()">
+	<input id="but" type="button" name="" value="ce" onclick="bc()"><br>
+	<input id="but" type="button" name="" value="+" onclick="bpl()">
+	<input id="but" type="button" name="" value="-" onclick="bmi()">
+	<input id="but" type="button" name="" value="*" onclick="bmu()">
+	<input id="but" type="button" name="" value="/" onclick="bdi()">
+
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+	function b1()
+	{
+document.Calculator.display.value += "1";
+	}
+
+function b2()
+	{
+document.Calculator.display.value += "2";
+	}
+function b3()
+	{
+document.Calculator.display.value += "3";
+	}
+function b4()
+	{
+document.Calculator.display.value += "4";
+	}
+function b5()
+	{
+document.Calculator.display.value += "5";
+	}
+function b6()
+	{
+document.Calculator.display.value += "6";
+	}
+function b7()
+	{
+document.Calculator.display.value += "7";
+	}
+function b8()
+	{
+document.Calculator.display.value += "8";
+	}
+function b9()
+	{
+document.Calculator.display.value += "9";
+	}
+function b0()
+	{
+document.Calculator.display.value += "0";
+	}
+function bpl()
+	{
+document.Calculator.display.value += "+";
+	}
+function bmi()
+	{
+document.Calculator.display.value += "-";
+	}
+function bmu()
+	{
+document.Calculator.display.value += "*";
+	}
+function bdi()
+	{
+document.Calculator.display.value += "/";
+	}
+function beq()
+	{
+		var result = eval(document.Calculator.display.value)
+document.Calculator.display.value = result;
+	}
+function bc()
+	{
+document.Calculator.display.value = "";
+	}
+
+
+
+
+</script>
+</body>
+</html>
